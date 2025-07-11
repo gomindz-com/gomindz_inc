@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go-Site</title>
+
+    <!-- CUSTOM-CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- BOX-ICONS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- SWIPER-JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- FONT-AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
+</head>
+<body>
+    <!-- HEADER-NAVBAR -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav-logo">
+                <img src="./images/logo.png" alt="Company-logo" class="company-logo">
+                <img src="./images/logo-text.png" alt="logo" class="company-logo-text">
+            </a>
+
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#hero" class="nav-link">
+                            <i class='bx bx-home nav-icon'></i>
+                            <span class="nav-name">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link">
+                            <i class='bx bx-cog nav-icon'></i>
+                            <span class="nav-name">Services</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">
+                            <i class='bx bx-user nav-icon'></i>
+                            <span class="nav-name">About Us</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html#contact" class="nav-link">
+                            <i class='bx bx-phone nav-icon'></i>
+                            <span class="nav-name">Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>  
+
+            <div class="nav-media">
+                <a href="https://www.linkedin.com/company/gomindz/"><img src="./images/icons/linkedin.webp" alt="LinkedIn"></a>
+                <a href="https://x.com/gomindz_inc?s=11"><img src="./images/icons/twitter.webp" alt="Twitter"></a>
+                <a href="https://www.instagram.com/gomindz_inc?igsh=azQ4djh5aGF5ZzR0&utm_source=qr"><img src="./images/icons/instagram.webp" alt="Instagram"></a>
+            </div>
+        </nav>
+    </header>
+   
+    <!-- HERO-SECTION -->
+    <section class="hero" id="hero">
+        <div class="container hero-heading">
+            <div class="headline">
+                <h1>Smarter Strategy. Powerful Insights. Real Impacts</h1>
+            </div>
+        </div>
+        <div class="hero-intro">
+            <p>
+                We blend data analytics, AI, and strategic thinking to help businesses and individuals leverage technology and insights to unlock opportunities, enhance performance, and stay ahead. We turn data into a roadmap for success.
+            </p>
+        </div>
+        <img src="./images/home-icons.png" alt="home-icons" class="home-icons">
+    </section> 
+    <div class="video-thumbnail">
+        <img src="./images/about-img-2.JPG" alt="Video thumbnail" class="responsive-img">
+        <div class="blue-overlay"></div>
+        <div class="play-icon" id="videoBtn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+            <path d="M8 5v14l11-7z"/>
+            </svg>
+        </div>
+        <div id="videoModal" class="video-modal">
+            <!-- Overlay that doesn't affect video -->
+             <div class="video-overlay"></div>
+  
+            <!-- Close button at top -->
+            <span class="close-btn">&times;</span>
+  
+            <!-- Video container (unaffected by overlay) -->
+            <!-- <div class="video-container">
+                <video id="fullscreenVideo" controls>
+                    <source src="./images/NCRM GOMINDZ.mp4" type="video/mp4">
+                </video>
+            </div> -->
+        </div>
+    </div>
+    
+    
+    <!-- OUR-PARTNERS -->
+    <section class="partners">
+        <div class="container">
+            <div class="col-lg-6">
+                <h2 style="font-size: 32px;">Trusted by Industry Leaders</h2>
+                <P style="max-width: 600px; font-size: 16px;">
+                    From startups to global enterprises, our work speaks through those who trust us. Explore the brands that chose excellence.
+                </P>
+            </div>
+            <div class="logo-slider-container">
+                <div class="logo-slider">
+                    <div class="logo-slide-track">
+                        <div class="logo-slide">
+                            <img style="width: 60px;" src="./images/partners/academy.webp" alt="Partner 1">
+                        </div>
+                        <div class="logo-slide">
+                            <img src="./images/partners/amc.webp" alt="Partner 1">
+                        </div>
+                        <div class="logo-slide">
+                            <img style="width: 60px;" src="./images/partners/fisheries.webp" alt="Partner 1">
+                        </div>
+                        <div class="logo-slide">
+                            <img src="./images/partners/nana.webp" alt="Partner 1">
+                        </div>
+                        <div class="logo-slide">
+                            <img style="width: 96px;" src="./images/partners/porek.webp" alt="Partner 1">
+                        </div>
+                        <div class="logo-slide">
+                            <img style="width: 96px;" src="./images/partners/tendaba.webp" alt="Partner 1">
+                        </div>
+                        <div class="logo-slide">
+                            <img style="width: 90px;" src="./images/partners/ecomansa.webp" alt="Partner 1">
+                        </div>
+                        <div class="logo-slide">
+                            <img style="width: 83px;" src="./images/partners/modem.png" alt="Partner 1">
+                        </div>
+                        <div class="logo-slide">
+                            <img style="width: 86px;" src="./images/partners/baldez-media.png" alt="Partner 1">
+                        </div>
+                        <div class="logo-slide">
+                            <img style="width: 76px;" src="./images/partners/demz.png" alt="Partner 1">
+                        </div>
+      
+                        <!-- Duplicates -->
+                        <div class="logo-slide">
+                            <img style="width: 60px;" src="./images/partners/academy.webp" alt="Partner 1">
+                        </div>
+                        <div class="logo-slide">
+                            <img src="./images/partners/amc.webp" alt="Partner 1">
+                        </div>
+                        <div class="logo-slide">
+                            <img style="width: 50px;" src="./images/partners/fisheries.webp" alt="Partner 1">
+                        </div>
+                        <div class="logo-slide">
+                            <img src="./images/partners/nana.webp" alt="Partner 1">
+                        </div>
+                        <div class="logo-slide">
+                            <img src="./images/partners/porek.webp" alt="Partner 1">
+                        </div>
+                        <div class="logo-slide">
+                            <img src="./images/partners/tendaba.webp" alt="Partner 1">
+                        </div>
+                        <div class="logo-slide">
+                            <img src="./images/partners/ecomansa.webp" alt="Partner 1">
+                        </div>
+                        <div class="logo-slide">
+                            <img src="./images/partners/modem.png" alt="Partner 1">
+                        </div>
+                        <div class="logo-slide">
+                            <img src="./images/partners/baldez-media.png" alt="Partner 1">
+                        </div>
+                        <div class="logo-slide">
+                            <img src="./images/partners/demz.png" alt="Partner 1">
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    
+    <!-- WHY-US-SECTION -->
+    <section class="story-section">
+        <div class="story-image">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Data visualization dashboard">
+        </div>
+        <div class="story-content container">
+            <h2 class="story-heading">Why Choose Us.</h2>
+            
+            <div class="story-features">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h3 class="feature-title">Tailored to You</h3>
+                        <p class="feature-desc">Customized strategies that align with your business goals and personal ambitions.</p>
+                    </div>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h3 class="feature-title">Innovative Excellence</h3>
+                        <p class="feature-desc">Harnessing the latest in analytics, AI, and visualization to keep you ahead of the curve.</p>
+                    </div>
+                </div>
+                
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <div class="feature-text">
+                        <h3 class="feature-title">Trusted Expertise</h3>
+                        <p class="feature-desc">We uphold the highest standards of integrity, transparency, and reliability in every engagement.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="cta-button">
+                Discover Your Data Story
+                <span class="arrow">→</span>
+            </button>
+        </div>
+    </section> 
+
+    <div class="footer-cta">
+        <div class="cta-container">
+            <h1 class="cta-heading">Your Journey With Us</h1>
+            <p class="cta-subheading">
+                From consultation to implementation, our team is with you every step. We dive deep to align
+                with your goals and co-create strategies that resonate.
+            </p>
+        </div>
+    </div>
+
+    <!-- SERVICE-SECTION -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="col-lg-6">
+                <h2 style="font-size: 32px;">What We Offer</h2>
+                <P style="max-width: 600px; font-size: 16px;">
+                    We offer a holistic suite of services designed to support businesses and individuals at every stage of their digital and data transformation journey.
+                </P>
+            </div>
+            <div class="solutions-grid">
+                <h3 class="column-title"><i class='bx bx-data'></i> Data Solutions</h3>
+                <h3 class="column-title"><i class='bx bx-code-alt'></i> Software Solutions</h3>
+                <h3 class="column-title"><i class='bx bx-stats'></i>Consultancy</h3>
+            </div>
+            <div class="service-container">
+                <div class="service-content left-container">
+                    <img src="./images/icons/data-management.png" alt="numbering" class="numbering">
+                    <div class="service-box">
+                        <div class="service-box-content">
+                            <h4>Data Management & Integration</h4>
+                            <p>
+                                We help you organize, clean, and structure your data—ensuring it is secure,     accessible, and ready to power informed decisions.
+                            </p>
+                        </div>
+                        <span class="left-container-arrow"></span>
+                    </div>
+                </div>
+                <div class="service-content right-container">
+                    <img src="./images/icons/analysis.png" alt="numbering" class="numbering">
+                    <div class="service-box">
+                        <div class="service-box-content">
+                            <h4>Advanced Analytics & Insights</h4>
+                            <p>
+                                Go beyond surface-level metrics. We apply advanced analytical models to uncover trends, patterns, and opportunities hidden in your data.
+                            </p>
+                        </div>
+                        <span class="right-container-arrow"></span>
+                    </div>
+                </div>
+                <div class="service-content left-container">
+                    <img src="./images/icons/artificial-intelligence.png" alt="numbering" class="numbering">
+                    <div class="service-box">
+                        <div class="service-box-content">
+                            <h4>Artificial Intelligence Solutions</h4>
+                            <p>
+                                From predictive modeling to intelligent automation, we design and deploy AI-powered systems that drive efficiency, innovation, and performance.
+                            </p>
+                        </div>
+                        <span class="left-container-arrow"></span>
+                    </div>
+                </div>
+                <div class="service-content right-container">
+                    <img src="./images/icons/software-solutions.png" alt="numbering" class="numbering">
+                    <div class="service-box">
+                        <div class="service-box-content">
+                            <h4>Software Solutions Development</h4>
+                            <p>
+                                Whether you need a custom dashboard, a reporting tool, or an end-to-end digital product, our software team builds intuitive, scalable solutions tailored to your needs.
+                            </p>
+                        </div>
+                        <span class="right-container-arrow"></span>
+                    </div>
+                </div>
+                <div class="service-content left-container">
+                    <img src="./images/icons/capacity-building.png" alt="numbering" class="numbering">
+                    <div class="service-box">
+                        <div class="service-box-content">
+                            <h4>Capacity Building & Training</h4>
+                            <p>
+                                We empower teams and individuals through practical, hands-on training in data literacy, analytics, and digital tools—enabling them to work smarter, adapt faster, and lead with confidence.
+                            </p>
+                        </div>
+                        <span class="left-container-arrow"></span>
+                    </div>
+                </div>
+                <div class="service-content right-container">
+                    <img src="./images/icons/strategy-consulting.png" alt="numbering" class="numbering">
+                    <div class="service-box">
+                        <div class="service-box-content">
+                            <h4>Strategy & Consultancy</h4>
+                            <p>
+                                Get expert guidance to align your data, technology, and operations with your business goals. We co-develop strategic roadmaps that are actionable, scalable, and measurable.
+                            </p>
+                        </div>
+                        <span class="right-container-arrow"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OUR-APPROACH -->
+    <section class="our-approach">
+        <div class="container">
+            <div class="col-lg-6">
+            <h2 style="font-size: 32px;">Our Approach</h2>
+            </div>
+            <div class="approach-steps">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Discovery</h3>
+                    <p>Deep dive into your challenges and goals.​</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Design</h3>
+                    <p>Create data-driven frameworks personalized to you.​</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Delivery</h3>
+                    <p>Implement solutions with clarity and precision.​</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <h3>Growth</h3>
+                    <p>Provide continuous support and innovation to keep your strategy evolving.​</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- TESTIMONIAL-SECTION -->
+    <section class="section-height" id="testimonials">
+        <div class="container testimonial-container">
+            <div class="testimonial-content">
+                <h4 class="subheading text">Testimonials</h4>
+                <h1>Our Clients Say</h1>
+                <div class="slider">
+                    <div class="slide active">
+                        <p style="font-size: 17px;">
+                            <span><i class='bx bxs-quote-left'></i></span>
+                            The data visualization dashboards implemented by Gomindz have transformed the way we interpret complex information. The user-friendly interface has facilitated clearer communication and decision-making across our teams.
+                        </p>
+                        <div class="slide-info">
+                            <h4>Ministry of Fishries</h4>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <p style="font-size: 17px;">
+                            <span><i class='bx bxs-quote-left'></i></span>
+                            The software development expertise showcased by Gomindz is truly commendable. The applications created have not only met our specific needs but have set a new standard for efficiency and innovation.
+                        </p>
+                        <div class="slide-info">
+                            <h4>NANA</h4>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <p style="font-size: 17px;">
+                            <span><i class='bx bxs-quote-left'></i></span>
+                            Our collaboration with Gomindz goes beyond transactional business. The dedicated support and ongoing partnership have created a sense of trust and confidence in their commitment to our success.
+                        </p>
+                        <div class="slide-info">
+                            <h4>Porek Financial</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-indicator">
+                    <img src="./images/icons/MinistryofFisheriesLogo.png" class="active" alt="Student-Image" data-id="0">
+                    <img src="./images/icons/NanaLogo.jpg" alt="Student-Image" data-id="1">
+                    <img src="./images/icons/porek.png" alt="Student-Image" data-id="2">
+                </div>
+            </div>
+            <div class="overview-img">
+                <img src="./images/testimonial-img-1.jpg" alt="overview">
+                <img src="./images/testimonial-img-2.jpg" alt="overview1">
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- FOOTER-CTA-SECTION -->
+    <div class="footer-cta">
+        <div class="cta-container">
+            <h1 class="cta-heading">Ready to Work With a Partner You Can Trust?</h1>
+            <p class="cta-subheading">Let's turn your data into one of your most powerful assets.</p>
+            <div class="cta-buttons">
+                <!-- <button class="cta-button cta-button-primary" id="getStartedBtn">
+                    <span class="emoji">👉</span> Get Started Today
+                </button> -->
+                <button class="cta-button cta-button-secondary" id="scheduleCallBtn">
+                    Schedule a Strategy Call
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- FOOTER-SECTION -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="about.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Consultancy</a></li>
+                        <li><a href="#">Data Management</a></li>
+                        <li><a href="#">Advanced Analytics</a></li>
+                        <li><a href="#">Software Development</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i>Kairaba Avenue, Beside Qcell</p>
+                        <p><i class="fas fa-phone"></i> +220 3258685/3502246</p>
+                        <p><i class="fas fa-envelope"></i> info@gomindz.gm</p>
+                    </div>
+                    
+                    <div class="social-icons">
+                        <a href="https://x.com/gomindz_inc?s=11"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/gomindz_inc?igsh=azQ4djh5aGF5ZzR0&utm_source=qr"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/gomindz/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for the latest updates.</p>
+                    
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Gomindz All Rights Reserved.</i></p>
+            </div>
+        </div>
+    </footer>
+    <!-- jQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <!-- SWIPER-JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- CUSTOM-JS -->
+    <script src="./js/script.js"></script> 
+</body>
+</html>
