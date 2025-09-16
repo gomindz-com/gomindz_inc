@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Open modal with smooth transition
   videoBtn.addEventListener('click', function() {
     videoModal.style.display = 'block';
-    void videoModal.offsetWidth; // Trigger reflow
+    void videoModal.offsetWidth;
     videoModal.classList.add('active');
     video.play().catch(e => console.log('Autoplay prevented:', e));
   });
