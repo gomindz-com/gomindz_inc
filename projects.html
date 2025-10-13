@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Projects — Data Science · Software · AI</title>
+    <meta
+      name="description"
+      content="Project showcase for a Data Science, Software Development and AI company. Responsive cards and filters."
+    />
+    <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <!-- HEADER-NAVBAR -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav-logo">
+          <img
+            src="./images/logo.png"
+            alt="Company-logo"
+            class="company-logo"
+          />
+          <img
+            src="./images/logo-text.png"
+            alt="logo"
+            class="company-logo-text"
+          />
+        </a>
+
+        <div class="nav-menu" id="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">
+                <i class="bx bx-home nav-icon"></i>
+                <span class="nav-name">Home</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#service" class="nav-link">
+                <i class="bx bx-cog nav-icon"></i>
+                <span class="nav-name">Services</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">
+                <i class="bx bx-user nav-icon"></i>
+                <span class="nav-name">About Us</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="projects.html" class="nav-link">
+                <i class="bx bx-user nav-icon"></i>
+                <span class="nav-name">Projects</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html#contact" class="nav-link">
+                <i class="bx bx-phone nav-icon"></i>
+                <span class="nav-name">Contact</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav-media">
+          <a href="https://www.linkedin.com/company/gomindz/"
+            ><img src="./images/icons/linkedin.webp" alt="LinkedIn"
+          /></a>
+          <a href="https://x.com/gomindz_inc?s=11"
+            ><img src="./images/icons/twitter.webp" alt="Twitter"
+          /></a>
+          <a
+            href="https://www.instagram.com/gomindz_inc?igsh=azQ4djh5aGF5ZzR0&utm_source=qr"
+            ><img src="./images/icons/instagram.webp" alt="Instagram"
+          /></a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- HOME-SECTION -->
+    <div class="section-hight about-home" id="about-home">
+      <div class="container home-container" data-aos="fade-up">
+        <h1>Explore Our Cutting-Edge Projects</h1>
+        <p>From AI to Software to Data Science — innovation in action.</p>
+        <a href="#overview"><i class="bx bx-chevrons-down"></i></a>
+      </div>
+    </div>
+    <div class="projects-container">
+      <div class="wrap">
+        <div class="projects-header">
+          <nav class="controls">
+            <div class="filter-group">
+              <button class="filter-btn" data-filter="all" aria-pressed="true">
+                All
+              </button>
+              <button class="filter-btn" data-filter="data">
+                Data Science
+              </button>
+              <button class="filter-btn" data-filter="sw">Software</button>
+              <button class="filter-btn" data-filter="ai">AI</button>
+            </div>
+          </nav>
+        </div>
+
+        <main>
+          <section>
+            <div id="grid" class="grid"></div>
+            <div id="empty" class="empty" style="display: none">
+              No projects found.
+            </div>
+          </section>
+        </main>
+
+        <footer>
+          © <span id="year"></span> Gomindz — All rights Reserved.
+        </footer>
+      </div>
+    </div>
+
+    <!-- FOOTER-SECTION -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="about.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Consultancy</a></li>
+                        <li><a href="#">Data Management</a></li>
+                        <li><a href="#">Advanced Analytics</a></li>
+                        <li><a href="#">Software Development</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i>Kairaba Avenue, Beside Qcell</p>
+                        <p><i class="fas fa-phone"></i> +220 3258685/3502246</p>
+                        <p><i class="fas fa-envelope"></i> info@gomindz.gm</p>
+                    </div>
+                    
+                    <div class="social-icons">
+                        <a href="https://x.com/gomindz_inc?s=11"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/gomindz_inc?igsh=azQ4djh5aGF5ZzR0&utm_source=qr"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/gomindz/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for the latest updates.</p>
+                    
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Gomindz All Rights Reserved.</i></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/projects.js"></script>
+  </body>
+</html>

@@ -50,8 +50,6 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-
-
 // WHY-US-SECTION
 document.addEventListener('DOMContentLoaded', function() {
             const ctaButton = document.querySelector('.cta-button');
@@ -70,6 +68,117 @@ document.addEventListener('DOMContentLoaded', function() {
                 // window.location.href = '/discover';
             });
         });
+
+
+
+// PARTNERS_SECTION
+const slideTrack = document.getElementById("slideTrack");
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
+const partnersSection = document.querySelector(".partners");
+
+// Partner logos
+const logos = [
+  { src: "./images/partners/academy.webp", alt: "Academy", width: "72px" },
+  { src: "./images/partners/amc.webp", alt: "AMC", width: "105px" },
+  { src: "./images/partners/easy_financial.png", alt: "Demz", width: "105px" },
+  { src: "./images/partners/nccrm.png", alt: "NCCRM", width: "80px" },
+  { src: "./images/partners/mops.png", alt: "MOPS", width: "70px" },
+  { src: "./images/partners/porek.webp", alt: "Porek", width: "92px" },
+  { src: "./images/partners/gicta.png", alt: "GICTA", width: "100px" },
+  { src: "./images/partners/modem.png", alt: "Modem Pay", width: "100px" },
+  { src: "./images/partners/baldez-media.png", alt: "Baldez Media", width: "110px" },
+  { src: "./images/partners/aneked.png", alt: "Aneked", width: "80px" },
+  { src: "./images/partners/nccp.png", alt: "nccp", width: "70px" },
+  { src: "./images/partners/fisheries.webp", alt: "Fisheries", width: "70px" },
+  { src: "./images/partners/ab.png", alt: "ab_financial", width: "90px" },
+  { src: "./images/partners/tendaba.webp", alt: "Tendaba", width: "100px" },
+  { src: "./images/partners/ecomansa.webp", alt: "Ecomansa", width: "90px" },
+  { src: "./images/partners/nana.webp", alt: "Nana", width: "90px" },
+  { src: "./images/partners/demz.png", alt: "Demz", width: "80px" },
+];
+
+// Create slides dynamically
+function createSlides() {
+  const fragment = document.createDocumentFragment();
+  for (let i = 0; i < 2; i++) {
+    logos.forEach((logo) => {
+      const slide = document.createElement("div");
+      slide.className = "logo-slide";
+      const widthAttr = logo.width ? `style="width:${logo.width}"` : "";
+      slide.innerHTML = `<img src="${logo.src}" alt="${logo.alt}" ${widthAttr}>`;
+      fragment.appendChild(slide);
+    });
+  }
+  slideTrack.appendChild(fragment);
+}
+
+createSlides();
+
+let pos = 0;
+let isPaused = false;
+let animationId;
+let totalWidth = 0;
+const speed = 0.4;
+
+// Calculate total width dynamically after rendering
+function updateTotalWidth() {
+  const firstSet = Array.from(slideTrack.children).slice(0, logos.length);
+  totalWidth = firstSet.reduce((sum, slide) => sum + slide.offsetWidth, 0);
+}
+
+setTimeout(updateTotalWidth, 300);
+
+// Continuous auto-scroll
+function animate() {
+  if (!isPaused && totalWidth > 0) {
+    pos -= speed;
+
+    // Reset position when first set fully scrolls
+    if (Math.abs(pos) >= totalWidth) {
+      pos = 0;
+    }
+
+    slideTrack.style.transform = `translateX(${pos}px)`;
+  }
+
+  animationId = requestAnimationFrame(animate);
+}
+
+// Manual navigation
+function navigate(direction) {
+  isPaused = true;
+  cancelAnimationFrame(animationId);
+
+  pos += direction * 100; // Move manually
+  slideTrack.style.transition = "transform 0.5s ease-out";
+  slideTrack.style.transform = `translateX(${pos}px)`;
+
+  // Resume after short delay
+  setTimeout(() => {
+    slideTrack.style.transition = "none";
+    isPaused = false;
+    animate();
+  }, 1500);
+}
+
+nextBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  navigate(-1);
+});
+
+prevBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  navigate(1);
+});
+
+// Pause on hover
+partnersSection.addEventListener("mouseenter", () => (isPaused = true));
+partnersSection.addEventListener("mouseleave", () => (isPaused = false));
+
+// Start animation
+animate();
+
 
 // TESTIMONIAL-SECTION
 const slides = document.querySelector(".slider").children;
@@ -90,6 +199,5 @@ for(let i=0; i<indicatorImages.length; i++){
         slides[id].classList.add("active");
     })
 }       
-
 
 // TEAM-SECTION
