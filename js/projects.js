@@ -3,7 +3,7 @@ const projects = [
 
   { id: "p3", title: "Ministry of Fishries and Water Resources", desc: "Developed an interactive dashboard that provides real-time monitoring of fisheries and water resource data. This solution enables the ministry to track usage, manage resources efficiently, and support policy implementation.", category: "data", img: "/images/projects/ministry of fishries.jpg", link: "#", tags: ["Tableau", "Power Query", "Excel"] },
 
-  { id: "p4", title: "HR Management System ", desc: "A comprehensive HR management solution to automate core functions such as employee attendance, payroll, and performance tracking, helping organizations improve efficiency and reduce errors.", category: "sw", img: "/images/projects/hr system.png", link: "#", tags: ["Next Js", "Express", "Postgress SQL"] },
+  { id: "p4", title: "HR Management System ", desc: "A comprehensive HR management solution to automate core functions such as employee attendance, payroll, and performance tracking, helping organizations improve efficiency and reduce errors.", category: "sw", img: "/images/projects/hr system.png", link: "https://hr.gomindz.gm/", tags: ["Next Js", "Express", "Postgress SQL"] },
 
     { id: "p2", title: "Data Portal and Analytics System for NCCRM", desc: "Delivered a secure and user-friendly data portal integrated with an analytics system, enabling the organization to efficiently collect, manage, and analyze critical data for improved reporting and transparency.", category: "sw", img: "/images/projects/nccrm.png", link: "#", tags: ["Next Js", "TypeScript", "Mongo DB"] },
 
