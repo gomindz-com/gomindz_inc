@@ -1,11 +1,17 @@
 const projects = [
-  { id: "p1", title: "Demand Forecasting Platform", desc: "Time-series forecasting for retail inventory using LSTM & Prophet.", category: "data", img: "/images/home-dsb.webp", link: "#", tags: ["LSTM", "Prophet", "Python"] },
-  { id: "p2", title: "AI-Powered Chat Assistant", desc: "Conversational AI for customer support integrated with analytics.", category: "ai", img: "/images/home-dsb.webp", link: "#", tags: ["NLP", "Transformers", "TensorFlow"] },
-  { id: "p3", title: "Healthcare Data Pipeline", desc: "HIPAA-compliant ETL pipeline with secure analytics for clinicians.", category: "data", img: "/images/home-dsb.webp", link: "#", tags: ["Apache Spark", "Airflow", "AWS"] },
-  { id: "p4", title: "FinTech Microservices Platform", desc: "Event-driven microservices with real-time payment processing.", category: "sw", img: "/images/home-dsb.webp", link: "#", tags: ["Kubernetes", "Docker", "gRPC"] },
-  { id: "p5", title: "Computer Vision Quality Control", desc: "CNN-based visual inspection achieving 98% defect detection accuracy.", category: "ai", img: "/images/home-dsb.webp", link: "#", tags: ["CNN", "OpenCV", "PyTorch"] },
-  { id: "p6", title: "Customer Analytics Dashboard", desc: "Interactive BI dashboard with cohort analysis and segmentation.", category: "data", img: "/images/home-dsb.webp", link: "https://academy.gomindz.gm/index.html", tags: ["Tableau", "D3.js", "SQL"] },
-  { id: "p7", title: "AI-Powered Recommendation System", desc: "Personalized recommendations for e-commerce boosting sales by 20%.", category: "ai", img: "/images/home-dsb.webp", link: "https://academy.gomindz.gm/", tags: ["Matrix Factorization", "Scikit-Learn", "Python"] }
+  { id: "p1", title: "Data Warehouse for Gomindz Academy", desc: "Designed and deployed a unified data warehouse that integrates fragmented data sources such as enrollment, finance, and grading into a single platform. A real-time dashboard was also developed, giving management and faculty on-demand visibility into key metrics for faster decision-making.", category: "data", img: "/images/projects/ga 360 dashboard.png", link: "#", tags: ["Tableau", "SQL", "Python"] },
+
+  { id: "p3", title: "Ministry of Fishries and Water Resources", desc: "Developed an interactive dashboard that provides real-time monitoring of fisheries and water resource data. This solution enables the ministry to track usage, manage resources efficiently, and support policy implementation.", category: "data", img: "/images/projects/ministry of fishries.jpg", link: "#", tags: ["Tableau", "Power Query", "Excel"] },
+
+  { id: "p4", title: "HR Management System ", desc: "A comprehensive HR management solution to automate core functions such as employee attendance, payroll, and performance tracking, helping organizations improve efficiency and reduce errors.", category: "sw", img: "/images/projects/hr system.png", link: "#", tags: ["Next Js", "Express", "Postgress SQL"] },
+
+    { id: "p2", title: "Data Portal and Analytics System for NCCRM", desc: "Delivered a secure and user-friendly data portal integrated with an analytics system, enabling the organization to efficiently collect, manage, and analyze critical data for improved reporting and transparency.", category: "sw", img: "/images/projects/nccrm.png", link: "#", tags: ["Next Js", "TypeScript", "Mongo DB"] },
+
+  { id: "p5", title: "AI-Powered Diagnostic Support System for Breast Cancer", desc: "Developed an intelligent diagnostic support tool that leverages AI to assist radiologists and healthcare specialists in identifying potential signs of breast cancer. The system enhances early detection accuracy, reduces workload, and supports better patient outcomes.", category: "ai", img: "/images/projects/brest cancer.png", link: "#", tags: ["Next Js", "Python", "TypeScript"] },
+
+  { id: "p6", title: "National Road Authority Dashboard", desc: "Created a comprehensive dashboard that consolidates data on road networks, maintenance schedules, and infrastructure projects. The tool enhances operational efficiency and provides leadership with clear insights for planning and resource allocation.", category: "data", img: "/images/projects/nra dashboard.jpg", link: "#", tags: ["Tableau", "Excel", "SQL"] },
+
+  { id: "p7", title: "Website for Tendaba", desc: "Designed and developed a responsive and modern website to enhance Tendaba’s online presence, improve customer engagement, and showcase services with an accessible digital platform.", category: "sw", img: "/images/projects/tendaba.png", link: "#", tags: ["HTML", "CSS", "JavaScript"] }
 ];
 
 const grid = document.getElementById("grid");
