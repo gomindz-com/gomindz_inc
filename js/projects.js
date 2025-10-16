@@ -5,7 +5,6 @@ const projects = [
 
   { id: "p3", title: "Ministry of Fishries and Water Resources", desc: "Developed an interactive dashboard that provides real-time monitoring of fisheries and water resource data. This solution enables the ministry to track usage, manage resources efficiently, and support policy implementation.", category: "data", img: "/images/projects/ministry of fishries.jpg", link: "https://public.tableau.com/app/profile/salieu.jallow/viz/Fisheries_17605340760670/Dashboard2?publish=yes", tags: ["Tableau", "Power Query", "Excel"] },
 
-
   { id: "p1", title: "Data Warehouse for Gomindz Academy", desc: "Designed and deployed a unified data warehouse that integrates fragmented data sources such as enrollment, finance, and grading into a single platform. A real-time dashboard was also developed, giving management and faculty on-demand visibility into key metrics for faster decision-making.", category: "data", img: "/images/projects/ga 360 dashboard.png", link: "https://public.tableau.com/app/profile/salieu.jallow/viz/GA_360_Dashboard1/GA360Dashboard?publish=yes", tags: ["Tableau", "SQL", "Python"] },
   
     { id: "p2", title: "Data Portal and Analytics System for NCCRM", desc: "Delivered a secure and user-friendly data portal integrated with an analytics system, enabling the organization to efficiently collect, manage, and analyze critical data for improved reporting and transparency.", category: "sw", img: "/images/projects/nccrm.png", link: "https://nccrm.gomindz.gm/portal/data-portal", tags: ["Next Js", "TypeScript", "Mongo DB"] },
@@ -14,7 +13,9 @@ const projects = [
 
   { id: "p6", title: "National Road Authority Dashboard", desc: "Created a comprehensive dashboard that consolidates data on road networks, maintenance schedules, and infrastructure projects. The tool enhances operational efficiency and provides leadership with clear insights for planning and resource allocation.", category: "data", img: "/images/projects/nra dashboard.jpg", link: "https://public.tableau.com/app/profile/salieu.jallow/viz/Dashboard1_17605321329030/Dashboard1?publish=yes", tags: ["Tableau", "Excel", "SQL"] },
 
-  { id: "p7", title: "Website for Tendaba", desc: "Designed and developed a responsive and modern website to enhance Tendaba’s online presence, improve customer engagement, and showcase services with an accessible digital platform.", category: "sw", img: "/images/projects/tendaba.png", link: "https://bailodev.github.io/tendaba-site/", tags: ["HTML", "CSS", "JavaScript"] }
+  { id: "p7", title: "Website for Tendaba", desc: "Designed and developed a responsive and modern website to enhance Tendaba’s online presence, improve customer engagement, and showcase services with an accessible digital platform.", category: "sw", img: "/images/projects/tendaba.png", link: "https://bailodev.github.io/tendaba-site/", tags: ["HTML", "CSS", "JavaScript"] },
+
+  { id: "p7", title: "NCCP - Breast Cancer Screening System", desc: "Delivered a secure and user-friendly data portal integrated with an analytics system for nccp, enabling the organization to efficiently collect, manage, and analyze critical Breast Cancer data for improved reporting and transparency.", category: "sw", img: "/images/projects/nccp.png", link: "https://nccp.gomindz.gm/", tags: ["Next Js", "Tailwind", "Postgress"] }
 ];
 
 const grid = document.getElementById("grid");
