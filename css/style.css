@@ -211,7 +211,7 @@ img {
 .hero {
   position: relative;
   background: linear-gradient(#0c3e8a, rgba(0, 0, 0, 0.5)),
-    url("../images/data-bg.jpg") no-repeat center center fixed;
+    url("../images/fisheries-presentation.png") no-repeat top center fixed;
   background-size: cover;
   color: white;
   min-height: 100vh;
