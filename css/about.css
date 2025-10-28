@@ -865,7 +865,7 @@
 h3 {
   margin: 0;
   font-size: 18px;
-  color: var(--text);
+  /* color: var(--text); */
 }
 p.desc {
   margin: 0;
@@ -1062,7 +1062,7 @@ p.desc {
   border: 0;
 }
 
-footer {
+.project_footer {
   margin-top: 28px;
   text-align: center;
   color: var(--muted);
