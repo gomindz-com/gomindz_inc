@@ -1321,21 +1321,21 @@ img {
 
 .footer-column ul {
   list-style: none;
+  cursor: pointer;
 }
 
 .footer-column ul li {
   margin-bottom: 10px;
+  transition: all 0.3s ease;
 }
 
 .footer-column ul li a {
   color: #bdc3c7;
   text-decoration: none;
-  transition: all 0.3s ease;
   display: inline-block;
 }
 
-.footer-column ul li a:hover {
-  color: var(--primary-color);
+.footer-column ul li:hover {
   transform: translateX(5px);
 }
 
